@@ -1,0 +1,15 @@
+# Server properties
+server:
+  servlet:
+    context-path: /tour-api
+  port: 8080
+
+# Spring properties
+spring:
+  # Dev is active by default. This value can be overwritten by java arg param
+  profiles:
+    active: heroku
+  application:
+    name: tour-api
+  messages:
+    basename: bundles/apiLanguageBundle
